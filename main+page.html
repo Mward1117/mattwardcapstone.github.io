@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+    <head>
+       <title>SAW</title>
+       <link href="main.css" rel="stylesheet" type="text/css" /> 
+       <script src="myscripts.js"></script>
+    </head>
+        <body>
+          <div id="menu">
+            <h1> CLASSES</h1>
+              <ul id="classlist">
+                <li><button type="button" onclick="periodIndex=0;displayView();">Period 1</button></li>
+                <li><button type="button" onclick="periodIndex=1;displayView();">Period 2</button></li>
+                <li><button type="button" onclick="periodIndex=2;displayView();">Period 3</button></li>                
+                <li><button type="button" onclick="periodIndex=3;displayView();">Period 4</button></li>              
+              </ul>
+         </div>
+         <div>
+          <h2>WORK</h2>
+            <ul id="list">
+              <li><button type="button" onclick="viewIndex=0;displayView();">Notes</button></li>
+              <li><button type="button" onclick="viewIndex=1;displayView();">Assignments</button></li>
+            </ul>
+        </div>
+           <div id="content">
+
+      
+
+            <div id="divSavedContent"></div>
+            <button type="button" onclick="onClick();">add</button>
+          </div>  
+          <script>
+            loadData();
+            displayView();
+            window.onunload=windowClosing;
+          </script>
+        </body>
+</html>
